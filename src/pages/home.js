@@ -1,21 +1,29 @@
 import React from "react";
-import { OptForm } from "../components";
+import { OptForm, Feature } from "../components";
 import { FaqsContainer } from "../containers/faqs";
 import { FooterContainer } from "../containers/footer";
 import { JumbotronContainer } from "../containers/jumbotron";
 import { HeaderContainer } from "../containers/header";
+
 export default function Home() {
   return (
     <>
       <HeaderContainer>
-        <OptForm>
-          <OptForm.Text>
-            Ready to Watch? Enter your email address to start your membership.
-          </OptForm.Text>
-          <OptForm.Break />
-          <OptForm.Input placeholder="Your Email Address" />
-          <OptForm.Button>Try It Now</OptForm.Button>
-        </OptForm>
+        <Feature>
+          <Feature.Title>Unlimited movies, TV shows, and more.</Feature.Title>
+          <Feature.Subtitle>
+            Watch anywhere. Cancel at any time.
+          </Feature.Subtitle>
+          <OptForm>
+            <OptForm.Text>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </OptForm.Text>
+            <OptForm.Break />
+            <OptForm.Input placeholder="Your Email Address" />
+            <OptForm.Button>Get Started</OptForm.Button>
+          </OptForm>
+        </Feature>
       </HeaderContainer>
       <JumbotronContainer />
       <FaqsContainer />
