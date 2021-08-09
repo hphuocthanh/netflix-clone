@@ -2,14 +2,18 @@ import React from "react"
 import { Header } from "../components"
 import * as ROUTES from "../constants/routes"
 
-export function HeaderContainer({children}) {
+export function HeaderContainer({ children, removeSignInBtn }) {
     return (
         <Header>
             <Header.Frame>
                 <Header.Logo to={ROUTES.HOME} src="/images/misc/logo.svg" alt="Notflix" />
-                <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
+                {!removeSignInBtn && <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>}
             </Header.Frame>
             {children}
         </Header>
     )
+}
+ 
+HeaderContainer.defaultProps = {
+    removeSignInBtn: false
 }
