@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Background, Container, Logo, ButtonLink, Group, Link, Text } from "./styles/header"
+import {
+  Background,
+  Container,
+  Logo,
+  ButtonLink,
+  Group,
+  Link,
+  Text,
+  Feature,
+  FeatureCallOut,
+  PlayButton,
+  Search,
+  SearchIcon,
+  SearchInput,
+  Picture,
+  Profile,
+  Dropdown,
+} from "./styles/header";
 
 export default function Header({
   isBgIncluded = true,
@@ -19,8 +36,30 @@ Header.Frame = function HeaderFrame({ children, ...restOfProps }) {
 };
 
 Header.Group = function HeaderGroup({ children, ...restOfProps }) {
-  return <Group {...restOfProps}>{children}</Group>
-}
+  return <Group {...restOfProps}>{children}</Group>;
+};
+
+Header.Search = function HeaderSearch({
+  searchTerm,
+  setSearchTerm,
+  ...restOfProps
+}) {
+  const [searchActive, setSearchActive] = useState(false);
+
+  return (
+    <Search {...restOfProps}>
+      <SearchIcon onClick={() => setSearchActive(!searchActive)}>
+        <img src="/images/icons/search.png" alt="Search " />
+      </SearchIcon>
+      <SearchInput
+        value={searchTerm}
+        onChange={({ target }) => setSearchTerm(target.value)}
+        placeholder="Search films and series"
+        active={searchActive}
+      />
+    </Search>
+  );
+};
 
 Header.Logo = function HeaderLogo({ to, ...restOfProps }) {
   return (
@@ -31,26 +70,40 @@ Header.Logo = function HeaderLogo({ to, ...restOfProps }) {
 };
 
 Header.Text = function HeaderText({ children, ...restOfProps }) {
-  return (
-    <Text {...restOfProps}>
-      {children}
-    </Text>
-  );
+  return <Text {...restOfProps}>{children}</Text>;
 };
 
 Header.Link = function HeaderLink({ children, ...restOfProps }) {
-  return (
-    <Link {...restOfProps}>
-      {children}
-    </Link>
-  );
+  return <Link {...restOfProps}>{children}</Link>;
 };
 
-
 Header.ButtonLink = function HeaderButtonLink({ children, ...restOfProps }) {
-    return (
-      <ButtonLink {...restOfProps}>
-        {children}
-      </ButtonLink>
-    );
-  };
+  return <ButtonLink {...restOfProps}>{children}</ButtonLink>;
+};
+
+Header.Feature = function HeaderFeature({ children, ...restOfProps }) {
+  return <Feature {...restOfProps}>{children}</Feature>;
+};
+
+Header.FeatureCallOut = function HeaderFeatureCallOut({
+  children,
+  ...restOfProps
+}) {
+  return <FeatureCallOut {...restOfProps}>{children}</FeatureCallOut>;
+};
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restOfProps }) {
+  return <PlayButton {...restOfProps}>{children}</PlayButton>;
+};
+
+Header.Picture = function HeaderPicture({ src, ...restOfProps }) {
+  return <Picture src={`/images/users/${src}.png`} {...restOfProps} />;
+};
+
+Header.Profile = function HeaderProfile({ children, ...restOfProps }) {
+  return <Profile {...restOfProps}>{children}</Profile>;
+};
+
+Header.Dropdown = function HeaderDropdown({ children, ...restOfProps }) {
+  return <Dropdown {...restOfProps}>{children}</Dropdown>;
+};
