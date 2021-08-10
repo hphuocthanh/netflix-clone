@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<p align="center">
+  <h3 align="center">Notflix</h3>
+  <p align="center">
+    A clone of netflix.com where users can authenticate themselves, select viewer profiles, browse films and series, and watch videos online.
+    <br />
+    <br />
+    <a href="https://netflix-hphuocthanh.netlify.app/">View Demo</a>
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Screen Shot(s)
 
-## Available Scripts
+#### Homepage:   
+![Homepage](/public/images/screenshots/homepage.png)
 
-In the project directory, you can run:
+#### Sign In:   
+![Sign In](/public/images/screenshots/signIn.png)
 
-### `npm start`
+#### Profiles:   
+![Profiles](/public/images/screenshots/profile.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Welcome:   
+![Welcome Page](/public/images/screenshots/welcome.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Feature Movie:   
+![Feature Movie](/public/images/screenshots/feature.png)
 
-### `npm test`
+## Installation and Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine. Also, kindly change the config ID of firebase to your own in the /lib/firebase.js.
 
-### `npm run build`
+Installation:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To Run Test Suite:  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm test`  
 
-### `npm run eject`
+To Start Server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm start`  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Visit App:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`localhost:3000`  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Reflection
 
-## Learn More
+This was a 5-day project in an attempt to understand the advanced React codebase. Project goals included getting myself familiar with advanced techniques in React and not afraid to code something big.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I coded along with the tutorial of Karl Hadwen (find him on [Youtube](https://www.youtube.com/c/CognitiveSurge/featured)). I added several modifications like multiple user profiles, Facebook authentication (though it's in development mode so only a few can use this feature) and UI adjustments for a close resemblance to the netflix website in Vietnam (added animation in the Jumbotron). 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The main challenge I faced was understanding the concepts of HOCs (Higher-Order Components) and the structure of the project as a whole initially. This lead me to researching into React compound compoundnents, React advanced topics and using Firebase for authentication.
 
-### Code Splitting
+At the end of the day, the technologies implemented in this project are React, React-Router, Styled Components, Fuse.js and Firebase.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgements
 
-### Analyzing the Bundle Size
+- [The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
+- [Karl Hadwen](https://twitter.com/karlhadwen)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### MIT License
 
-### Making a Progressive Web App
+Copyright (c) [2021] [Hoang Phuoc Thanh]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
