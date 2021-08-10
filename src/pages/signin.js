@@ -34,9 +34,10 @@ export default function Signin() {
       });
   };
 
-  const signInWithFacebook = () => {
+  const signInWithFacebook = (e) => {
+    e.preventDefault();
     const provider = new Firebase.auth.FacebookAuthProvider();
-
+    
     firebase
       .auth()
       .signInWithPopup(provider)
@@ -72,7 +73,12 @@ export default function Signin() {
             <Form.Submit disabled={isInvalid} type="submit">
               Sign In
             </Form.Submit>
-            <Form.Provider onClick={signInWithFacebook}>Sign In With Facebook</Form.Provider>
+            <Form.Provider onClick={signInWithFacebook}>
+              <Form.Icon src="/images/misc/fb-logo.png" />
+              <Form.TextSmall>
+                Sign In With Facebook
+              </Form.TextSmall>
+              </Form.Provider>
             <Form.Text>
               New To Notflix? <Form.Link to="/signup">Sign up now</Form.Link>
             </Form.Text>

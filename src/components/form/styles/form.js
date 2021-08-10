@@ -93,4 +93,17 @@ export const Link = styled(RouterLink)`
 
 export const Provider = styled.button`
     cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 2em;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;    
+`
+export const Icon = styled.img`
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    filter: brightness(0) invert(1);
 `

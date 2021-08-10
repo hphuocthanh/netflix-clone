@@ -9,7 +9,8 @@ import {
   Text,
   TextSmall,
   Link,
-  Provider
+  Provider,
+  Icon
 } from "./styles/form";
 
 export default function Form({ children, ...restOfProps }) {
@@ -50,4 +51,8 @@ Form.Submit = function FormSubmit({ children, ...restOfProps }) {
 
 Form.Provider = function FormProvider({ children, ...restOfProps }) {
   return <Provider {...restOfProps}>{children}</Provider>;
+};
+
+Form.Icon = function FormIcon({ src, ...restOfProps }) {
+  return <Icon src={src} {...restOfProps} />
 };
