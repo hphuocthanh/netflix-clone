@@ -15,7 +15,7 @@ export function FooterContainer() {
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Source code</Footer.Link>
+          <Footer.Link href="https://github.com/hphuocthanh/netflix-clone">Source code</Footer.Link>
           <Footer.Link href="#">Stay</Footer.Link>
           <Footer.Link href="#">Healthy</Footer.Link>
           <Footer.Link href="#">Everyone</Footer.Link>
