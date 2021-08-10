@@ -3,8 +3,9 @@
     "id": 1,
     "title": "Enjoy on your TV.",
     "subTitle": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
-    "image": "/images/misc/home-tv.jpg",
-    "alt": "Tiger King on Netflix",
+    "image": "/images/misc/home-tvshow.png",
+    "video": "/images/misc/home-tvshow.m4v",
+    "alt": "Notflix Homepage",
     "direction": "row"
   },
   {
@@ -12,7 +13,10 @@
     "title": "Download your shows to watch offline.",
     "subTitle": "Save your data and watch all your favourites offline.",
     "image": "/images/misc/home-mobile.jpg",
-    "alt": "Netflix on Mobile",
+    "image2": "/images/misc/home-mobile2.png",
+    "text": "Stranger Things",
+    "text2": "Downloading...",
+    "alt": "Notflix on Mobile",
     "direction": "row-reverse"
   },
   {
@@ -20,7 +24,15 @@
     "title": "Watch everywhere.",
     "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
     "image": "/images/misc/home-imac.jpg",
-    "alt": "Money Heist on Netflix",
+    "alt": "Money Heist on Notflix",
     "direction": "row"
+  },
+  {
+    "id": 4,
+    "title": "Create profiles for kids.",
+    "subTitle": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+    "image": "/images/misc/home-kids.png",
+    "alt": "Notflix for Kids",
+    "direction": "row-reverse"
   }
 ]

@@ -16,7 +16,7 @@ import {
   SearchInput,
   Picture,
   Profile,
-  Dropdown,
+  Dropdown
 } from "./styles/header";
 
 export default function Header({
@@ -25,7 +25,9 @@ export default function Header({
   ...restOfProps
 }) {
   return isBgIncluded ? (
-    <Background {...restOfProps}>{children}</Background>
+    <Background {...restOfProps}>
+      {children}
+    </Background>
   ) : (
     children
   );

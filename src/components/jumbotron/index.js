@@ -7,9 +7,15 @@ import {
   Title,
   Subtitle,
   Image,
+  Animation,
+  AnimationText,
 } from "./styles/jumbotron";
 
-function Jumbotron({ direction = "row", children, ...restOfProps }) {
+export default function Jumbotron({
+  direction = "row",
+  children,
+  ...restOfProps
+}) {
   return (
     <Item {...restOfProps}>
       <Inner direction={direction}>{children}</Inner>
@@ -39,4 +45,27 @@ Jumbotron.Subtitle = function JumbotronSubtitle({ children, ...restOfProps }) {
 Jumbotron.Image = function JumbotronImage({ ...restOfProps }) {
   return <Image {...restOfProps} />;
 };
-export default Jumbotron;
+
+Jumbotron.Animation = function JumbotronAnimation({
+  video,
+  image2,
+  text,
+  text2,
+  ...restOfProps
+}) {
+  return typeof video != "undefined" ? (
+    <Animation {...restOfProps} watchOnTV>
+      <video id="notflix-home-tvshow" playsInline autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
+    </Animation>
+  ) : (
+    <Animation {...restOfProps} downloadAndWatch>
+      <img src={image2} alt="" />
+      <AnimationText>
+        <div>{text}</div>
+        <div>{text2}</div>
+      </AnimationText>
+    </Animation>
+  );
+};

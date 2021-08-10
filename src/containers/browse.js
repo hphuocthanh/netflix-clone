@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
-import { Card, Header, Loading } from "../components";
+import Fuse from "fuse.js";
+
+import { Card, Header, Loading, Player } from "../components";
 import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
@@ -25,10 +27,22 @@ export function BrowseContainer({ slides }) {
     }, 3000);
   }, [user]);
 
+  useEffect(() => {
+    const fuse = new Fuse(slideRows, {
+      keys: ["data.description", "data.title", "data.genre"],
+    });
+    const results = fuse.search(searchTerm).map(({ item }) => item);
+
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    } else {
+      setSlideRows(slides[category]);
+    }
+  }, [searchTerm]);
 
   useEffect(() => {
-    setSlideRows(slides[category])
-  }, [slides, category])
+    setSlideRows(slides[category]);
+  }, [slides, category]);
 
   return profile.displayName ? (
     <>
@@ -38,7 +52,7 @@ export function BrowseContainer({ slides }) {
           <Header.Group>
             <Header.Logo
               to={ROUTES.HOME}
-              src="/images/misc/logo.svg"
+              src="/images/misc/logo.png"
               alt="Notflix"
             />
             <Header.Link
@@ -90,22 +104,30 @@ export function BrowseContainer({ slides }) {
       </Header>
 
       <Card.Group>
-          {slideRows.map((slideItem) => (
-              <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
-                  <Card.Title>{slideItem.title}</Card.Title>
-                  <Card.Entities>
-                      {slideItem.data.map((item) => (
-                        <Card.Item key={item.docId} item={item}>
-                            <Card.Image src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`} />
-                            <Card.Meta>
-                                <Card.Subtitle>{item.title}</Card.Subtitle>
-                                <Card.Text>{item.description}</Card.Text>
-                            </Card.Meta>  
-                        </Card.Item>
-                      ))}
-                  </Card.Entities>
-              </Card>
-          ))}
+        {slideRows.map((slideItem) => (
+          <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
+            <Card.Title>{slideItem.title}</Card.Title>
+            <Card.Entities>
+              {slideItem.data.map((item) => (
+                <Card.Item key={item.docId} item={item}>
+                  <Card.Image
+                    src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                  />
+                  <Card.Meta>
+                    <Card.Subtitle>{item.title}</Card.Subtitle>
+                    <Card.Text>{item.description}</Card.Text>
+                  </Card.Meta>
+                </Card.Item>
+              ))}
+            </Card.Entities>
+            <Card.Feature category={category}>
+              <Player>
+                  <Player.Button />
+                  <Player.Video />
+              </Player>
+            </Card.Feature>
+          </Card>
+        ))}
       </Card.Group>
       <FooterContainer />
     </>

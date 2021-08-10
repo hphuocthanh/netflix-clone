@@ -5,7 +5,7 @@ export const Background = styled.section`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) =>
-      src ? `../images/misc/${src}.jpg` : `../images/misc/home-bg.jpg`})
+      src ? `../images/misc/${src}.jpg` : `../images/misc/home-new-bg.jpg`})
     top left / cover no-repeat;
 
   @meida (max-width: 1100px) {
@@ -32,20 +32,19 @@ export const Container = styled.div`
 `;
 
 export const Link = styled.p`
-    color: white;
-    text-decoration: none;
-    margin-right: 30px;
-    font-weight: ${({ active }) => (active === "true" ? "700" : "normal")}
-    cursor: pointer;
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: ${({ active }) => (active === "true" ? "700" : "normal")};
+  cursor: pointer;
 
-    &:hover {
-        font-weight: bold;
-    }
+  &:hover {
+    font-weight: bold;
+  }
 
-    &:last-of-type {
-        margin-right: 0;
-    }
-
+  &:last-of-type {
+    margin-right: 0;
+  }
 `;
 
 export const ButtonLink = styled(RouterLink)`

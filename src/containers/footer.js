@@ -8,31 +8,31 @@ export function FooterContainer() {
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
-          <Footer.Link href="#">FAQ</Footer.Link>
-          <Footer.Link href="#">Investor Relations</Footer.Link>
-          <Footer.Link href="#">Ways To Watch</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
+          <Footer.Link href="https://github.com/hphuocthanh">My Github</Footer.Link>
+          <Footer.Link href="https://www.linkedin.com/in/hphuocthanh/">My Linkedin</Footer.Link>
+          <Footer.Link href="https://www.facebook.com/hphuocthanh/">My Facebook</Footer.Link>
+          <Footer.Link href="https://twitter.com/hphuocthanh">My Twitter</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Help Centres</Footer.Link>
-          <Footer.Link href="#">Careers</Footer.Link>
-          <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#">Contact Us</Footer.Link>
+          <Footer.Link href="#">Source code</Footer.Link>
+          <Footer.Link href="#">Stay</Footer.Link>
+          <Footer.Link href="#">Healthy</Footer.Link>
+          <Footer.Link href="#">Everyone</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Account</Footer.Link>
-          <Footer.Link href="#">Redeem Gift Cards</Footer.Link>
-          <Footer.Link href="#">Privacy</Footer.Link>
-          <Footer.Link href="#">Speed Test</Footer.Link>
+          <Footer.Link href="#">Coffee</Footer.Link>
+          <Footer.Link href="#">Mechanical Keyboard</Footer.Link>
+          <Footer.Link href="#">Cat</Footer.Link>
+          <Footer.Link href="#">Basketball</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Media Centre</Footer.Link>
-          <Footer.Link href="#">Buy Gift Cards</Footer.Link>
-          <Footer.Link href="#">Cookie Preferences</Footer.Link>
-          <Footer.Link href="#">Legal Notices</Footer.Link>
+          <Footer.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Media Centre</Footer.Link>
+          <Footer.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Buy Gift Cards</Footer.Link>
+          <Footer.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cookie Preferences</Footer.Link>
+          <Footer.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Legal Notices</Footer.Link>
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
