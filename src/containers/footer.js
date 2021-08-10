@@ -36,7 +36,7 @@ export function FooterContainer() {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Notflix Vietnam</Footer.Text>
+      <Footer.Text>Notflix Vietnam | hphuocthanh</Footer.Text>
     </Footer>
   );
 }

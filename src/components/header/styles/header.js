@@ -5,7 +5,7 @@ export const Background = styled.section`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) =>
-      src ? `../images/misc/${src}.jpg` : `../images/misc/home-new-bg.jpg`})
+      src ? `../images/misc/${src}.png` : `../images/misc/home-new-bg.jpg`})
     top left / cover no-repeat;
 
   @meida (max-width: 1100px) {

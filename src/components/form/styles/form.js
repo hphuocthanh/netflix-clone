@@ -90,3 +90,7 @@ export const Link = styled(RouterLink)`
         text-decoration: underline;
     }
 `;
+
+export const Provider = styled.button`
+    cursor: pointer;
+`

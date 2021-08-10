@@ -9,6 +9,7 @@ import {
   Text,
   TextSmall,
   Link,
+  Provider
 } from "./styles/form";
 
 export default function Form({ children, ...restOfProps }) {
@@ -45,4 +46,8 @@ Form.Error = function FormError({ children, ...restOfProps }) {
 
 Form.Submit = function FormSubmit({ children, ...restOfProps }) {
   return <Submit {...restOfProps}>{children}</Submit>;
+};
+
+Form.Provider = function FormProvider({ children, ...restOfProps }) {
+  return <Provider {...restOfProps}>{children}</Provider>;
 };

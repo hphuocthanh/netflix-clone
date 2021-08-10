@@ -16,16 +16,11 @@ export function BrowseContainer({ slides }) {
 
   const { firebase } = useContext(FirebaseContext);
 
-  const user = {
-    displayName: "Thanh",
-    photoUrl: "1",
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, [user]);
+  }, [profile]);
 
   useEffect(() => {
     const fuse = new Fuse(slideRows, {
@@ -46,8 +41,8 @@ export function BrowseContainer({ slides }) {
 
   return profile.displayName ? (
     <>
-      {loading ? <Loading src={user.photoUrl} /> : <Loading.ReleaseBody />}
-      <Header src="joker1" dontShowOnSmallViewPort>
+      {loading ? <Loading src={profile.photoUrl} /> : <Loading.ReleaseBody />}
+      <Header src="goblin" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo
@@ -74,11 +69,11 @@ export function BrowseContainer({ slides }) {
               setSearchTerm={setSearchTerm}
             />
             <Header.Profile>
-              <Header.Picture src={user.photoUrl} />
+              <Header.Picture src={profile.photoUrl} />
               <Header.Dropdown>
                 <Header.Group>
-                  <Header.Picture src={user.photoUrl} />
-                  <Header.Link>{user.displayName}</Header.Link>
+                  <Header.Picture src={profile.photoUrl} />
+                  <Header.Link>{profile.displayName}</Header.Link>
                 </Header.Group>
                 <Header.Group>
                   <Header.Link onClick={() => firebase.auth().signOut()}>
@@ -91,13 +86,11 @@ export function BrowseContainer({ slides }) {
         </Header.Frame>
 
         <Header.Feature>
-          <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
+          <Header.FeatureCallOut>Goblin</Header.FeatureCallOut>
           <Header.Text>
-            Forever alone in a crowd, failed comedian Arthur Fleck seeks
-            connection as he walks the streets of Gotham City. Arthur wears two
-            masks -- the one he paints for his day job as a clown, and the guise
-            he projects in a futile attempt to feel like he's part of the world
-            around him.
+            Kim Shin, an immortal goblin, goes to find a human bride to remove
+            an invisible sword from his chest and end his life. One day, school
+            student Ji Eun-Tak confesses to him that she is the chosen one.
           </Header.Text>
           <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
@@ -122,8 +115,8 @@ export function BrowseContainer({ slides }) {
             </Card.Entities>
             <Card.Feature category={category}>
               <Player>
-                  <Player.Button />
-                  <Player.Video />
+                <Player.Button />
+                <Player.Video />
               </Player>
             </Card.Feature>
           </Card>
@@ -132,6 +125,6 @@ export function BrowseContainer({ slides }) {
       <FooterContainer />
     </>
   ) : (
-    <SelectProfileContainer user={user} setProfile={setProfile} />
+    <SelectProfileContainer setProfile={setProfile} />
   );
 }
