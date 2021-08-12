@@ -52,7 +52,7 @@ This was a 5-day project in an attempt to understand the advanced React codebase
 
 I coded along with the tutorial of Karl Hadwen (find him on [Youtube](https://www.youtube.com/c/CognitiveSurge/featured)). I added several modifications like multiple user profiles, Facebook authentication (though it's in development mode so only a few can use this feature) and UI adjustments for a close resemblance to the netflix website in Vietnam (added animation in the Jumbotron). 
 
-The main challenge I faced was understanding the concepts of HOCs (Higher-Order Components) and the structure of the project as a whole initially. This lead me to researching into React compound compoundnents, React advanced topics and using Firebase for authentication.
+The main challenge I faced was understanding the concepts of HOCs (Higher-Order Components) and the structure of the project as a whole initially. This lead me to researching into React compound components, React advanced topics and using Firebase for authentication.
 
 At the end of the day, the technologies implemented in this project are React, React-Router, Styled Components, Fuse.js and Firebase.
 
