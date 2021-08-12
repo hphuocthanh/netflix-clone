@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> render the <Accordion /> with populated data 1`] = `
+<div
+  class="accordion__Container-sc-1wnyt6p-0 ksMOZP"
+>
+  <div
+    class="accordion__Inner-sc-1wnyt6p-2 jhrhpT"
+  >
+    <h1
+      class="accordion__Title-sc-1wnyt6p-4 liYPYt"
+    >
+      Frequently Asked Questions?
+    </h1>
+    <div
+      class="accordion__Frame-sc-1wnyt6p-1 bfUyVu"
+    >
+      <section
+        class="accordion__Item-sc-1wnyt6p-3 ebdSZB"
+      >
+        <div
+          class="accordion__Header-sc-1wnyt6p-5 gbSJEf"
+        >
+          What is Notflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </section>
+      <section
+        class="accordion__Item-sc-1wnyt6p-3 ebdSZB"
+      >
+        <div
+          class="accordion__Header-sc-1wnyt6p-5 gbSJEf"
+        >
+          How much does Notflix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </section>
+      <section
+        class="accordion__Item-sc-1wnyt6p-3 ebdSZB"
+      >
+        <div
+          class="accordion__Header-sc-1wnyt6p-5 gbSJEf"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </section>
+      <section
+        class="accordion__Item-sc-1wnyt6p-3 ebdSZB"
+      >
+        <div
+          class="accordion__Header-sc-1wnyt6p-5 gbSJEf"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </section>
+      <section
+        class="accordion__Item-sc-1wnyt6p-3 ebdSZB"
+      >
+        <div
+          class="accordion__Header-sc-1wnyt6p-5 gbSJEf"
+        >
+          What can I watch on Notflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;

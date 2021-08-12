@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> render the <Footer /> with populated data 1`] = `
+<div
+  class="footer__Container-sc-eh6b4z-0 jLwgcp"
+>
+  <p
+    class="footer__Title-sc-eh6b4z-3 cyyqNw"
+  >
+    Questions? Contact me.
+  </p>
+  <p
+    class="footer__Break-sc-eh6b4z-6 dBdpwM"
+  />
+  <div
+    class="footer__Row-sc-eh6b4z-1 fHXvKY"
+  >
+    <div
+      class="footer__Column-sc-eh6b4z-2 fItCRV"
+    >
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://github.com/hphuocthanh"
+      >
+        My Github
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.linkedin.com/in/hphuocthanh/"
+      >
+        My Linkedin
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.facebook.com/hphuocthanh/"
+      >
+        My Facebook
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://twitter.com/hphuocthanh"
+      >
+        My Twitter
+      </a>
+    </div>
+    <div
+      class="footer__Column-sc-eh6b4z-2 fItCRV"
+    >
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://github.com/hphuocthanh/netflix-clone"
+      >
+        Source code
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Stay
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Healthy
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Everyone
+      </a>
+    </div>
+    <div
+      class="footer__Column-sc-eh6b4z-2 fItCRV"
+    >
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Coffee
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Mechanical Keyboard
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Cat
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="#"
+      >
+        Basketball
+      </a>
+    </div>
+    <div
+      class="footer__Column-sc-eh6b4z-2 fItCRV"
+    >
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      >
+        Media Centre
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      >
+        Buy Gift Cards
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      >
+        Cookie Preferences
+      </a>
+      <a
+        class="footer__Link-sc-eh6b4z-4 hGJanl"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      >
+        Legal Notices
+      </a>
+    </div>
+  </div>
+  <p
+    class="footer__Break-sc-eh6b4z-6 dBdpwM"
+  />
+  <div
+    class="footer__Text-sc-eh6b4z-5 hSrOje"
+  >
+    Notflix Vietnam | hphuocthanh
+  </div>
+</div>
+`;
